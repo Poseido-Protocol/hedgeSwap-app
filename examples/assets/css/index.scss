@@ -1,0 +1,51 @@
+//输入框点击效果
+input:focus{
+  color: #B8D7D9 !important;
+  border: 1px solid #6BF8C5 !important;
+}
+.input_disabled{
+  background: #1B1B1B !important;
+  border: 2px solid #FF4747 !important;
+  color: #FF4747 !important;
+  opacity: 0.8 !important;
+}
+.input_disabled:focus{
+  background: #1B1B1B !important;
+  border: 2px solid #FF4747 !important;
+  color: #FF4747 !important;
+  opacity: 0.8 !important;
+}
+.input_disabled::placeholder{
+  color: #FF4747 !important;
+}
+//按钮效果
+.button_hoverFocus:hover{
+  background: #316568 !important;
+  border-radius: 8px !important;
+  color: #B8D7D9 !important;
+}
+.button_hoverFocus:focus{
+  background: #162D2F !important;
+  color: #B8D7D9 !important;
+}
+.button_disabled{
+  background: #7C8586 !important;
+  color: #8CA9AB !important;
+}
+.button_disabled:focus{
+  background: #7C8586 !important;
+  color: #8CA9AB !important;
+}
+.button_disabled:hover{
+  background: #7C8586 !important;
+  color: #8CA9AB !important;
+}
+//去除input type=number箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
